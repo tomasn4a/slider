@@ -4,16 +4,20 @@
 <head>
 	<title> Brunch Brooklyn </title>
 	<link type="text/css" rel="stylesheet" href="css/slider.css"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/slider.js"></script>
 </head>
 
 <body>
+<div class="wrapper">
 	<div id="slider">
-		<img src="images/IMG1.JPG"/>
-		<img src="images/IMG2.JPG"/>
-		<img src="images/IMG3.JPG"/>
-		<img src="images/IMG4.JPG"/>
+		<img id="1" src="images/IMG1.JPG"/>
+		<img id="2" src="images/IMG2.JPG"/>
+		<img id="3" src="images/IMG3.JPG"/>
+		<img id="4" src="images/IMG4.JPG"/>
 	</div>
-	<a href="#"> Previous </a>
-	<a href="#"> Next </a>
+	<a href="#" class="left" onclick="prev(); return false;"> Previous </a>
+	<a href="#" class="right" onclick="next(); return false;"> Next </a>
+</div>	
 </body>
 </html>
